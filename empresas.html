@@ -1,64 +1,31 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Empresas Parceiras - Vagas Itapipoca</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<section class="carousel-section">
+  <div class="carousel-container">
 
-<header>
-  <h1>Empresas Parceiras</h1>
-  <p>Empresas que divulgam vagas em Itapipoca</p>
-</header>
-
-<main class="container">
-
-  <!-- CARROSSEL -->
-  <div class="carousel">
-    <button class="nav prev" onclick="moveSlide(-1)">❮</button>
+    <button class="carousel-btn prev">&#10094;</button>
 
     <div class="carousel-track">
-      <div class="card">
-        <h3>Supermercado X</h3>
-        <p>Vagas frequentes</p>
-        <a class="btn" href="#">Ver vagas</a>
-      </div>
 
-      <div class="card">
+      <div class="empresa-card">
         <h3>Loja Y</h3>
         <p>Comércio local</p>
-        <a class="btn" href="#">Ver vagas</a>
+        <a href="index.html" class="btn">Ver vagas</a>
       </div>
 
-      <div class="card">
-        <h3>Empresa Z</h3>
-        <p>Indústria</p>
-        <a class="btn" href="#">Ver vagas</a>
+      <div class="empresa-card">
+        <h3>Supermercado X</h3>
+        <p>Varejo</p>
+        <a href="index.html" class="btn">Ver vagas</a>
       </div>
+
+      <div class="empresa-card">
+        <h3>Empresa Z</h3>
+        <p>Serviços</p>
+        <a href="index.html" class="btn">Ver vagas</a>
+      </div>
+
     </div>
 
-    <button class="nav next" onclick="moveSlide(1)">❯</button>
+    <button class="carousel-btn next">&#10095;</button>
+
   </div>
-
-  <!-- BOTÕES DE AÇÃO -->
-  <div class="actions">
-    <a href="https://wa.me/5588996223872" class="btn big" target="_blank">
-      ➕ Adicionar empresa
-    </a>
-
-    <a href="https://wa.me/5588996223872" class="btn outline" target="_blank">
-      📢 Anunciar vaga
-    </a>
-  </div>
-
-</main>
-
-<footer>
-  <p>© 2026 - Vagas Itapipoca | Divulgação gratuita</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+</section>
