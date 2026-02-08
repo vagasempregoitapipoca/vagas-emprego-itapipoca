@@ -12,3 +12,16 @@ function moveSlide(direction) {
 
   track.style.transform = `translateX(${-index * cardWidth}px)`;
 }
+const track = document.querySelector(".carousel-track");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+if (track && nextBtn && prevBtn) {
+  nextBtn.addEventListener("click", () => {
+    track.scrollBy({ left: 300, behavior: "smooth" });
+  });
+
+  prevBtn.addEventListener("click", () => {
+    track.scrollBy({ left: -300, behavior: "smooth" });
+  });
+}
